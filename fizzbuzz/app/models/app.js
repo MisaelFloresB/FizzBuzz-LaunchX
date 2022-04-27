@@ -4,7 +4,7 @@ const fs = require("fs");
 const rawdata = fs.readFileSync("explorers.json");
 const explorers = JSON.parse(rawdata); // read data explorers.json
 
-// console.log(explorers)
+console.log(rawdata)
 module.export = explorers
 
 // Part 2: Get the quantity of explorers names in node
@@ -15,8 +15,8 @@ console.log(explorersInNode.length)
 // Part4: Get the explorer's usernames in Node
 const explorersInNodeToGetUsernames = explorers.filter((explorer) => explorer.mission == "node");
 const usernamesInNode = explorersInNodeToGetUsernames.map((explorer) => explorer.githubUsername);
-console.log("obtengo los user names de los explorers en node")
-console.log(usernamesInNode)
+// console.log("obtengo los user names de los explorers en node")
+// console.log(usernamesInNode)
 
 // DEAD CODE: Part 5,6,7, please remove this and go to Part 8!
 
