@@ -22,4 +22,4 @@ class ExplorerService{
     }
 }
 
-module.export = ExplorerService
+module.exports = ExplorerService
