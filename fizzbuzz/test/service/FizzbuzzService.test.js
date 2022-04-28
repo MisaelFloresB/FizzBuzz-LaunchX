@@ -15,7 +15,7 @@ describe("Unit test for FizzBuzzService, applyValidationInExplorer", () =>{
     
             const explorersFizzbuzz = FizzBuzzService.applyValidationInExplorer(explorer2);
     
-            expect(explorersFizzbuzz.trick).toEqual("BUZZss")
+            expect(explorersFizzbuzz.trick).toEqual("BUZZ")
         });
 
         test("Test for requirement FIZZBUZZ", () =>{
