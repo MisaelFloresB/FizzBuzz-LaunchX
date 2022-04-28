@@ -2,13 +2,13 @@ const Reader = require('./../utils/Reader')
 
 class ExplorerService{
     static filterByMission(explorers, mission){
-        const explorersByMision = explorers.filter((explorer) => explorer.mission === mission)
+        const explorersByMision = explorers.filter((explorer) => explorer.mission === "node")
         return explorersByMision
     }
 
     static getAmountOfExplorersByMission(explorers, mission){
         const amountOfExplorersByMission = explorers.filter((explorer) => explorer.mission === mission)
-        return amountOfExplorersByMission
+        return amountOfExplorersByMission.length
 
 
     }
