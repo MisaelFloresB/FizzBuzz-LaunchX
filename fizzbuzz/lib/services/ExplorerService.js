@@ -17,7 +17,7 @@ class ExplorerService{
         const explorersUsernameByMission = explores.filter((explorer) => explorer.mission === mission);
         const explorersUsername = explorersUsernameByMission.map((explorer) => explorer.githubUsername);
 
-        return explorersUsername
+        return explorersUsername[0]
 
     }
 }
