@@ -1,4 +1,4 @@
-const ExplorerService = require('./../../lib/services/ExplorerService');
+const ExplorerService = require("./../../lib/services/ExplorerService");
 
 describe("Unit test for ExplorerService, filterByMission", () =>{
     test("Test for requirement 1", () =>{
@@ -16,10 +16,10 @@ describe("Unit test for ExplorerService, filterByMission", () =>{
 
     test("Unit test for ExplorerService, getAmountOfExplorersByMission", () =>{
 
-        const explorers = [{name: "Woopa14", mission:"node"}]
+        const explorers = [{name: "Woopa14", mission:"node"}];
 
         const explorersInNode = ExplorerService.getAmountOfExplorersByMission(explorers, "node");
-        expect(explorersInNode).toBe(1)
+        expect(explorersInNode).toBe(1);
 
     });
 
