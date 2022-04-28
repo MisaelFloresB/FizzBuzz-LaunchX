@@ -10,7 +10,7 @@ module.export = explorers
 // Part 2: Get the quantity of explorers names in node
 const explorersInNode = explorers.filter((explorer) => explorer.mission == "node");
 console.log("Obtengo la cantidad de explorers que tengan la mision node")
-console.log(explorersInNode.length)
+console.log(explorersInNode)
 
 // Part4: Get the explorer's usernames in Node
 const explorersInNodeToGetUsernames = explorers.filter((explorer) => explorer.mission == "node");
