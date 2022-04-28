@@ -23,6 +23,6 @@ describe("Unit test for FizzBuzzService, applyValidationInExplorer", () =>{
     
             const explorersFizzbuzz = FizzBuzzService.applyValidationInExplorer(explorer3);
     
-            expect(explorersFizzbuzz.trick).toEqual("FIZZBUZZss")
+            expect(explorersFizzbuzz.trick).toEqual("FIZZBUZZ")
         });
     });
