@@ -26,8 +26,16 @@ describe("Unit test for FizzBuzzService, applyValidationInExplorer", () =>{
         expect(explorersFizzbuzz.trick).toEqual("FIZZBUZZ");
     });
 
+    test("Test for requirement same number", () =>{
+        const explorer3 = {name: "Woopa1", score: 1};
+    
+        const explorersFizzbuzz = FizzBuzzService.applyValidationInExplorer(explorer3);
+    
+        expect(explorersFizzbuzz.score).toEqual(1);
+    });
+
     test("Test for requirement BUZZ, applyValidationInNumber", () =>{
-        const number = 15;
+        const number = "FIZZBUZZ";
     
         const numberSended = FizzBuzzService.applyValidationInNumber(number);
     
@@ -35,7 +43,7 @@ describe("Unit test for FizzBuzzService, applyValidationInExplorer", () =>{
     });
 
     test("Test for requirement BUZZ, applyValidationInNumber", () =>{
-        const number = 5;
+        const number = "BUZZ";
     
         const numberSended = FizzBuzzService.applyValidationInNumber(number);
     
@@ -43,10 +51,18 @@ describe("Unit test for FizzBuzzService, applyValidationInExplorer", () =>{
     });
 
     test("Test for requirement FIZZ, applyValidationInNumber", () =>{
-        const number = 6;
+        const number = "FIZZ";
     
         const numberSended = FizzBuzzService.applyValidationInNumber(number);
     
         expect(numberSended).toEqual("FIZZ");
+    });
+
+    test("Test for requirement score, applyValidationInNumber", () =>{
+        const number = {score: 1};
+    
+        const numberSended = FizzBuzzService.applyValidationInNumber(number);
+    
+        expect(numberSended.score).toEqual(1);
     });
 });
