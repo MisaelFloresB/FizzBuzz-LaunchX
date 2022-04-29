@@ -18,4 +18,32 @@ describe("Test for controller server", () =>{
 
         expect(explorersUsernames).toBe(5);
     });
+
+    test("Unit test for ExplorerController, getClientNumber", () =>{
+        const number = "FIZZBUZZ";
+        const explorersUsernames = ExplorerController.getClientNumber(number);
+
+        expect(explorersUsernames).toEqual("FIZZBUZZ");
+    });
+    
+    test("Unit test for ExplorerController, getClientNumber", () =>{
+        const number = "BUZZ";
+        const explorersUsernames = ExplorerController.getClientNumber(number);
+
+        expect(explorersUsernames).toEqual("BUZZ");
+    });
+
+    test("Unit test for ExplorerController, getClientNumber", () =>{
+        const number = "FIZZ";
+        const explorersUsernames = ExplorerController.getClientNumber(number);
+
+        expect(explorersUsernames).toEqual("FIZZ");
+    });
+
+    test("Unit test for ExplorerController, getClientNumber", () =>{
+        const number = {score:1};
+        const explorersUsernames = ExplorerController.getClientNumber(number);
+
+        expect(explorersUsernames.score).toEqual(1);
+    });
 });
