@@ -32,7 +32,7 @@ describe("Unit test for ExplorerService, filterByMission", () =>{
             mission: "node",
         }];
         const explorersInNode = ExplorerService.getExplorersUsernamesByMission(explorers, "node");
-        expect(explorersInNode).toBe("ajolonauta15");
+        expect(explorersInNode[0]).toBe("ajolonauta15");
 
     });
     
