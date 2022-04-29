@@ -25,4 +25,28 @@ describe("Unit test for FizzBuzzService, applyValidationInExplorer", () =>{
     
         expect(explorersFizzbuzz.trick).toEqual("FIZZBUZZ");
     });
+
+    test("Test for requirement BUZZ, applyValidationInNumber", () =>{
+        const number = 15;
+    
+        const numberSended = FizzBuzzService.applyValidationInNumber(number);
+    
+        expect(numberSended).toEqual("FIZZBUZZ");
+    });
+
+    test("Test for requirement BUZZ, applyValidationInNumber", () =>{
+        const number = 5;
+    
+        const numberSended = FizzBuzzService.applyValidationInNumber(number);
+    
+        expect(numberSended).toEqual("BUZZ");
+    });
+
+    test("Test for requirement FIZZ, applyValidationInNumber", () =>{
+        const number = 6;
+    
+        const numberSended = FizzBuzzService.applyValidationInNumber(number);
+    
+        expect(numberSended).toEqual("FIZZ");
+    });
 });
