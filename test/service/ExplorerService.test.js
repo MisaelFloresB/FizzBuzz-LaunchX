@@ -35,6 +35,27 @@ describe("Unit test for ExplorerService, filterByMission", () =>{
         expect(explorersInNode[0]).toBe("ajolonauta15");
 
     });
+
+    test("Unit tesr for ExplorerService, getExplorersByStack", () =>{
+
+        const explorers = [{
+            name: "Woopa15",
+            githubUsername: "ajolonauta15",
+            score: 15,
+            mission: "node",
+            stacks: ["javascript","groovy","elm"]
+        },
+        {
+            name: "Woopa14",
+            githubUsername: "ajolonauta15",
+            score: 15,
+            mission: "node",
+            stacks: ["javascript","groovy","elm"]
+        }];
+        const explorersInStack= ExplorerService.getExplorersByStack(explorers, "javascript");
+        expect(explorersInStack).toEqual(expect.objectContaining(explorers));
+
+    });
     
 
 });
