@@ -50,7 +50,7 @@ describe("Test for controller server", () =>{
     test("Unit test for ExplorerController, getExplorerStack", () =>{
         const stack = "elm";
         const explorerStack = ExplorerController.getExplorerStack(stack);
-        console.log(explorerStack)
+        console.log(explorerStack);
 
         expect(explorerStack).toEqual(expect.objectContaining(explorerStack));
     });
