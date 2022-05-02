@@ -46,4 +46,12 @@ describe("Test for controller server", () =>{
 
         expect(explorersUsernames.score).toEqual(1);
     });
+
+    test("Unit test for ExplorerController, getExplorerStack", () =>{
+        const stack = "elm";
+        const explorerStack = ExplorerController.getExplorerStack(stack);
+        console.log(explorerStack)
+
+        expect(explorerStack).toEqual(expect.objectContaining(explorerStack));
+    });
 });
